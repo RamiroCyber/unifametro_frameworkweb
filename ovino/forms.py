@@ -3,15 +3,15 @@ from .models import Ovino
 
 
 class OvinoForm(forms.ModelForm):
+    class Meta:
+        model = Ovino
 
-	class Meta:
-		model = Ovino
-
-		fields = [
-			"identificador",
+        fields = [
+            "identificador",
             "peso",
             "nascimento",
             "raca",
             "cor",
             "genero",
-		]
+            "tag",
+        ]
